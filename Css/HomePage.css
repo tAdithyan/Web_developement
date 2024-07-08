@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   margin: 0;
@@ -10,6 +9,7 @@ header{
   display: flex ;
   justify-content: space-between;
   align-items: center;
+  height: 5rem;
 }
 .logo{
   font-size:2.5rem;
@@ -23,12 +23,13 @@ header{
   text-decoration: none;
   color: black;
 }
-.logo  input{
+.logo  .search{
  height: 2rem;
  border-radius: 10px 1px 1px 10px;
  border: none; 
  background-color: rgb(237, 237, 218);
  padding-left: 1rem;
+ margin-left: 2rem;
  
 }
 .logo  button{
@@ -41,8 +42,95 @@ header{
 
 
 }
+nav{
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  padding: .5rem;
+}
+nav a{
+  text-decoration: none;
+  margin-left: 2rem;
+  color: black;
+}
+main{
+  height: 500px;
+}
+main .testimonial{
+  height: 500px;
+}
+main .offers{
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+
+}
+
+main .offers div{
+  margin: 2rem;
+} 
+.about{
+  height: 12rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 3rem;
+}
+.bestSellers{
+  height:600px;
+  margin: 3rem;
+}
+.bestSellers h1{
+  text-align: center;
+}
+.bestSellers article{
+  height: 500px;
+  margin: 3rem;
+}
+.category{
+  height: 100vh;
+  margin: 3rem;
+  justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.items{
+  height: 700px;
+  width: 100%;
+ 
+}
+.brands{
+  height: 400px;
+  padding: 2rem;
+ 
+}
+.brand{
+  height: 200px;
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.newsletter{
+  margin: 3rem;
+  height: 200px;
+}
+
+.overview{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 500px;
+  padding: 3rem;
+}
+.payment{
+  height: 15rem;
+}
+footer{
+height: 30px;
+text-align: center;
+}
 
 .test{
   border: 1px solid red;
-  height: 5rem;
 }
