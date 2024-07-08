@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif
+}
+header{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size:2.5rem;
+  font-weight:bolder;
+  margin-left: 2rem;
+  align-items: center;
+  display: flex;
+
+}
+.logo a{
+  text-decoration: none;
+  color: black;
+}
+.logo  input{
+ height: 2rem;
+ border-radius: 10px 1px 1px 10px;
+ border: none; 
+ background-color: rgb(237, 237, 218);
+ padding-left: 1rem;
+ 
+}
+.logo  button{
+  height: 2rem;
+  border-radius: 1px 10px 10px 1px;
+  padding:5px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+
+
+}
+
+.test{
+  border: 1px solid red;
+  height: 5rem;
+}
