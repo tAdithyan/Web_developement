@@ -4,138 +4,848 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY App</title>
+
     <link rel="stylesheet" href="/Css/HomePage.css" />
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="#">TechShed</a>
-        <input type="text" class="search" placeholder="Search here #" />
-        <button>Search</button>
+  <body class="bg-gray-200">
+    <header class="flex justify-between items-center h-20">
+      <div class="logo text-4xl font-bold ms-8 items-center flex">
+        <a href="#" class="no-underline text-black">TechShed</a>
+        <input
+          type="text"
+          class="p-2 rounded-s-xl ms-11 text-sm bg-yellow-50"
+          placeholder="Search here #"
+        />
+        <button class="text-sm">Search</button>
       </div>
-      <div class="user">
-        <a href=""><img src="#" alt="" /></a>
-        <button>Search</button>
+      <div class="user flex justify-center items-center gap-9">
+        <a href="#"
+          ><i class="fa-solid fa-user"></i></a>
+        <a href="#">LogIn</a>
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <div class="flex me-5">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+          <p
+            class="bg-black rounded-full w-5 h-5 text-white items-center flex justify-center"
+          >
+            1
+          </p>
+        </div>
       </div>
     </header>
-    <nav >
-      <a href="">Shop all</a>
-      <a href="">Computers</a>
-      <a href="">Computers</a>
-      <a href="">Computers</a>
-      <a href="">Computers</a>
-      <a href="">Computers</a
-      ><a href="">Computers</a>
-      <a href="">Computers</a>
-      <a href="">Computers</a>
+    <nav>
+      <a href="" class="links">Shop all</a>
+      <a href="" class="links">Computers</a>
+      <a href="" class="links">Tablets</a>
+      <a href="" class="links">Drons & cameras </a>
+      <a href="" class="links"
+        ><select id="Audio" name="Audio" class="bg-transparent w-15">
+          <option value="apple">Audio</option>
+          <option value="banana">HeadPhones</option>
+          <option value="cherry">Speakers</option>
+        </select></a
+      >
+
+      <a href="" class="links">Mobile</a
+      ><a href="" class="links">Tv&Home cinima</a>
+      <a href="" class="links">Watch</a>
+      <a href="" class="links">sale</a>
     </nav>
     <main>
       <section class="offersDetails">
+        <article class="test testimonial " >
+          <div class="relative">
+            <div class="mySlides hidden fade">
+              <img src="/Accets/carosal1.webp" style="width: 100%" />
+            </div>
 
-      <article class="test testimonial">
+            <div class="mySlides fade">
+              <img src="/Accets/carosal2.webp" style="width: 100%" />
+            </div>
 
-      </article>
-      <article class=" offers">
-        <div class="test"  >
+            <div class="mySlides fade">
+              <img src="/Accets/carosal2.webp" style="width: 100%" />
+            </div>
+          </div>
+          <br />
+<div class="absolute top-72 flex flex-col ms-32">
+  <span class="bg-red-600 text-white px-5 w-fit rounded-full m-2">Best Prices</span>
+  <div class="text-5xl flex flex-col font-semibold">
+     <span>Incredible Prices</span>
+  <span>on All Your</span>
+  <span>Favorite Items</span>
+  </div>
+ 
+  <span class="font-thin text-xl">Get more for less on selected brands</span>
 
+   <button class="bg-violet-500 rounded-full text-white px-16 mt-4 py-2 w-fit font-light  " >Shop Now</button>
+</div>
+
+
+        </article>
+        <article class="offers">
+          <div class="relative">
+            <img src="/Accets/offer1.webp" alt="" />
+            <div class="absolute top-24">
+              <h4 class="text-xl text-white">Holyday Deals</h4>
+              <h1 class="font-bold text-4xl text-white">Up to 30% off</h1>
+              <h1 class="text-xl text-white">Selected Smartphone Brands</h1>
+            </div>
+            <button
+              class="border-none p-2 absolute px-6 top-60 left-20 bg-white rounded-full"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div class="relative">
+            <img src="/Accets/offer2.webp" alt="" />
+            <div class="absolute top-24">
+              <h4 class="text-xl text-white">Holyday Deals</h4>
+              <h1 class="font-bold text-4xl text-white">Up to 30% off</h1>
+              <h1 class="text-xl text-white">Selected Smartphone Brands</h1>
+            </div>
+            <button
+              class="border-none p-2 absolute px-6 top-60 left-20 bg-white rounded-full"
+            >
+              Shop Now
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="about test">
+        <div
+          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        >
+          <i class="fa-solid fa-motorcycle"></i>
+          <div>
+            <p>Curb-side</p>
+            <p>Pickup</p>
+          </div>
         </div>
-        <div class="test">
-
+        <div
+          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        >
+          <i class="fa-solid fa-box"></i>
+          <div>
+            <p>Free shopping on</p>
+            <p>Order over $50</p>
+          </div>
         </div>
-
-      </article>
-    </section>
-
-
-    <section class="about test">
-
-        <div class="test">
-
+        <div
+          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        >
+          <i class="fa-solid fa-motorcycle"></i>
+          <div>
+            <p>Curb-side</p>
+            <p>Pickup</p>
+          </div>
         </div>
-        <div class="test">
-
+        <div
+          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        >
+          <i class="fa-solid fa-motorcycle"></i>
+          <div>
+            <p>Curb-side</p>
+            <p>Pickup</p>
+          </div>
         </div>
-        <div class="test">
+      </section>
+      <div class="bg-white p-10 m-10">
+        <h1 class="text-2xl text-center font-bold">Best Sellers</h1>
 
-        </div>
-        <div class="test">
-
-        </div>
-
-
-    </section>
-    <h1>Best Sellers</h1>
-
-    <section class="bestSellers test">
-      <!-- <article class="test">
-
-
-      </article> -->
-
-    </section>
-    <section class="category test">
-      <h1>Shop by category</h1>
-           <div class="items test">
-
-           </div>
-      
-          </section>
-          <section class="test testimonial">
-
-          </section>
-          <section class="bestSellers test">
-            <h1>On Sale</h1>
-                  <article class="test">
-            
-            
-                  </article>
-            
-                </section>
-                <section class="test testimonial">
-
-                </section>
-                <section class="brands test">
-                  <h1>Brands</h1>
-                  <div class="test brand">
-                    <div class="test"></div>
-                    <div class="test"></div>
-                    <div class="test"></div>
-                    <div class="test"></div>
-                    <div class="test"></div>
-
+        <section class="bestSellers test">
+          <div
+            class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 flex-col"
+          >
+            <div class="w-full relative flex items-center justify-center">
+              <button
+                aria-label="slide backward"
+                class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                id="prev"
+              >
+                <svg
+                  class="dark:text-gray-900"
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div
+                class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden"
+              >
+                <div
+                  id="slider"
+                  class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
+                >
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2 h-auto group hover:backdrop-blur-sm"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full p-6 items-center">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div
+                        class="flex h-auto p-6 font-bold mt-4 flex-col hidden group-hover:block ms-10 text-black backdrop-blur-sm"
+                      >
+                        <h3 class="text-sm">Smartphone Z pixel</h3>
+                        <h3>Smartphone Z pixel</h3>
+                        <button
+                          class="border bg-red-500 border-none rounded p-1"
+                        >
+                          Buy Now
+                        </button>
+                      </div>
+                    </div>
                   </div>
 
-                </section>
-                <section class="newsletter test">
-                  <h1>newsletter</h1>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
 
-                </section>
-                <section class="test testimonial">
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 relative w-full bg-red-500 sm:w-auto border mb-2"
+                  >
+                    <img
+                      src="/Accets/phone.webp"
+                      alt="phone"
+                      class="object-cover object-center w-full"
+                    />
+                    <div class="absolute w-full h-full p-6">
+                      <h2 class="bg-red-500 text-white rounded-xl w-fit px-2">
+                        Sale
+                      </h2>
+                      <div class="flex h-full items-center my-40 flex-col">
+                        <h3 class="">Smartpone Z pixel</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                aria-label="slide forward"
+                class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                id="next"
+              >
+                <svg
+                  class="dark:text-gray-900"
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button
+              class="bg-violet-600 text-white rounded-2xl mt-8 px-20 p-2 hover:bg-white border border-violet-600 hover:text-violet-600 transition duration-500 ease-in-out"
+            >
+              View All
+            </button>
+          </div>
+        </section>
+      </div>
 
-                </section>
-             
-              <section class="overview test">
-                <div class="test"></div>
-                <div class="test"></div>
-                <div class="test"></div>
-                <div class="test"></div>
+      <section class="category bg-white">
+        <h1 class="text-center text-3xl font-semibold">Shop by category</h1>
+        <div
+          class="items test grid grid-cols-5 gap-10 mt-10 justify-center items-center px-8"
+        >
+          <div class="test rounded-full w-60 h-60 hover:scale-105">
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+          <div
+            class="test rounded-full w-60 h-60 hover:scale-105 transition duration-500 ease-in-out"
+          >
+            <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
+            <p class="text-center mt-4 font-semibold text-xl">Mobails</p>
+          </div>
+        </div>
+      </section>
+      <section class="test testimonial relative overflow-hidden">
+        <img src="/Accets/offer3.webp" alt="offer" />
+        <div
+          class="absolute right-44 top-40 flex flex-col text-white justify-center items-center"
+        >
+          <span class="text-3xl font-thin"> Save up to </span>
+          <span class="text-7xl font-extrabold">$150</span>
+          <span class="text-3xl">on selected laptop </span>
+          <span class="text-3xl">& tablets brands</span>
+          <span class="text-base">Terms and conditions apply </span>
+          <button class="bg-white p-2 rounded-full text-black w-fit px-10 mt-6">
+            Shop
+          </button>
+        </div>
+      </section>
+      <section class="bestSellers test bg-white m-10 py-4">
+        <h1 class="text-3xl font-semibold text-center m-8">On Sale</h1>
 
-              </section>
-              <section class="payment test">
-<h1>Payment</h1>
-              </section>
-              <section>
+        <article class="test grid grid-cols-6 gap-4 p-10 m-28">
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+          <div class="border bg-white relative overflow-hidden">
+            <img
+              src="/Accets/cam.webp"
+              alt=""
+              class="hover:scale-105 transition duration-500 ease-in-out"
+            />
+            <div class="justify-center items-center flex flex-col">
+              <p>Space moon smartWatch</p>
+              <p>With Charger</p>
+              <p><span class="line-through m-2">$85</span>$70</p>
+              <div class="flex">
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star text-yellow-400"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="bg-red-500 rounded-full px-4 absolute top-3 left-3">
+                Sale
+              </p>
+            </div>
+          </div>
+        </article>
+        <div class="justify-center items-center flex mb-20">
+          <button class="bg-violet-700 px-5 p-2 rounded-full text-white">
+            Show more
+          </button>
+        </div>
+      </section>
+      <section class="test testimonial relative overflow-hidden">
+        <img src="/Accets/offer4.webp" alt="offer" />
+        <div
+          class="absolute left-44 top-40 flex flex-col text-white justify-center items-center"
+        >
+          <span class="text-3xl font-thin"> Save up to </span>
+          <span class="text-7xl font-extrabold">$1500</span>
+          <span class="text-3xl">on selected Drons </span>
+          <span class="text-3xl">& Acceseries</span>
+          <span class="text-base">Terms and conditions apply </span>
+          <button class="bg-white p-2 rounded-full text-black w-fit px-10 mt-6">
+            Shop
+          </button>
+        </div>
+      </section>
+      <section class="brands test m-10 bg-white">
+        <h1 class="text-3xl text-center">Brands</h1>
+        <div class="brand">
+          <div class="justify-center items-center flex border">
+            <img src="/Accets/Zodiac.webp" alt="" />
+          </div>
+          <div class="justify-center items-center flex border">
+            <img src="/Accets/Zodiac.webp" alt="" />
+          </div>
+          <div class="justify-center items-center flex border">
+            <img src="/Accets/Zodiac.webp" alt="" />
+          </div>
+          <div class="justify-center items-center flex border">
+            <img src="/Accets/Zodiac.webp" alt="" />
+          </div>
+          <div class="justify-center items-center flex border">
+            <img src="/Accets/Zodiac.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="newsletter test m-10 justify-center items-center flex flex-col bg-violet-700 text-white"
+      >
+        <h1>newsletter</h1>
+        <p>Sign up to receive updates on new arrivals and special offers</p>
+        <div class="relative">
+          <p>Email*</p>
+          <input
+            type="email"
+            height="30px"
+            class="h-[40px] w-[500px] rounded-full text-black p-4"
+            placeholder="Enter Your Email Here*"
+          />
+          <button
+            class="bg-black text-white p-2 rounded-full absolute right-0 px-16"
+          >
+            Subscribe
+          </button>
+        </div>
+      </section>
+      <section
+        class="test testimonial bg-white relative"
+        style="
+          background: url('/Accets/offer5.webp');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="flex flex-col absolute left-6 top-36">
+          <span class="text-2xl"> Need Help? Check</span>
+          <span class="text-2xl">Out Our Help Center</span>
+          <span
+            >I'm a paragraph. Click here to add your own text and edit me.</span
+          >
+          <span> Let your users get to know you.</span>
+          <button class="bg-violet-700 rounded-full w-fit px-10 py-1 mt-10">
+            Go to Help Center
+          </button>
+        </div>
+      </section>
 
-              </section>
+      <section class="overview test border-b-2">
+        <div class="test flex justify-center items-start flex-col">
+          <div class="flex flex-col justify-center ms-16 space-y-5">
+            <h1 class="text-lg font-bold">StoreLoaction</h1>
+            <div class="flex flex-col text-sm space-y-4">
+              <span>500 Terry Francine Street</span>
+              <span>San Francisco, CA 9415 </span>
+              <span>info@mysite.com </span>
+              <span>123-456-7890 </span>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test flex justify-center items-start flex-col">
+          <div class="flex flex-col justify-center ms-16 space-y-5">
+            <h1 class="text-lg font-bold">StoreLoaction</h1>
+            <div class="flex flex-col text-sm space-y-4">
+              <span>500 Terry Francine Street</span>
+              <span>San Francisco, CA 9415 </span>
+              <span>info@mysite.com </span>
+              <span>123-456-7890 </span>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test flex justify-center items-start flex-col">
+          <div class="flex flex-col justify-center ms-16 space-y-5">
+            <h1 class="text-lg font-bold">StoreLoaction</h1>
+            <div class="flex flex-col text-sm space-y-4">
+              <span>500 Terry Francine Street</span>
+              <span>San Francisco, CA 9415 </span>
+              <span>info@mysite.com </span>
+              <span>123-456-7890 </span>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test flex justify-center items-start flex-col">
+          <div class="flex flex-col justify-center ms-16 space-y-5">
+            <h1 class="text-lg font-bold">StoreLoaction</h1>
+            <div class="flex flex-col text-sm space-y-4">
+              <span>500 Terry Francine Street</span>
+              <span>San Francisco, CA 9415 </span>
+              <span>info@mysite.com </span>
+              <span>123-456-7890 </span>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="payment test mx-10">
+        <h1 class="text-center mt-8">We accept the following paying methods</h1>
+        <div class="flex gap-8 justify-center items-center mt-10">
+          <img src="/Accets/brand-amex@3x.webp" alt="american Express" />
+          <img src="/Accets/brand-chinaunionpay@3x.webp" alt="chinaunionpay" />
+          <img src="/Accets/brand-jcb@3x.webp" alt="jcb" />
+          <img src="/Accets/brand-mastercard@3x.webp" alt="mastercard" />
+        </div>
+      </section>
+    <div class="bg-gray-500">
 
-              <footer class="test">
-                <h5>© 2035 by TechShed. Powered and secured by Wix</h5>
-          
-              </footer>
-            </main>
+    </div>
 
-  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <footer class="test">
+        <h5>© 2035 by TechShed. Powered and secured by Wix</h5>
+      </footer>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4d8456b076.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/style.js"></script>
   </body>
-  
 </html>

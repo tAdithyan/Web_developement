@@ -1,27 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:sans-serif
+  font-family: sans-serif;
 }
-header{
-  display: flex ;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-}
-.logo{
-  font-size:2.5rem;
-  font-weight:bolder;
-  margin-left: 2rem;
-  align-items: center;
-  display: flex;
 
-}
-.logo a{
-  text-decoration: none;
-  color: black;
+
+  .links {
+   
+    font-size: small;
+  }
+
+.links:hover{
+  color:blueviolet;
+
 }
 .logo  .search{
  height: 2rem;
@@ -76,17 +72,8 @@ main .offers div{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 3rem;
 }
-.bestSellers{
-  height:600px;
-  margin: 3rem;
-}
-.bestSellers h1{
-  text-align: center;
-}
-.bestSellers article{
-  height: 500px;
-  margin: 3rem;
-}
+
+
 .category{
   height: 100vh;
   margin: 3rem;
@@ -131,6 +118,16 @@ height: 30px;
 text-align: center;
 }
 
-.test{
+/* .test{
   border: 1px solid red;
+} */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
