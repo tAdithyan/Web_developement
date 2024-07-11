@@ -29,3 +29,27 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+ function showitems(){
+  let navItems = document.getElementById('navItems');
+  navItems.style.display="block";
+  let bars = document.getElementById('bars');
+  bars.style.display='none'
+  let hideItems = document.getElementById('hideItems');
+  hideItems.style.display='block'
+  
+ }
+ function hideItems(){
+  let navItems = document.getElementById('navItems')
+  navItems.style.display="none";
+  let bars = document.getElementById('bars');
+  bars.style.display='block'
+  let hideItems = document.getElementById('hideItems');
+  hideItems.style.display='none'
+
+
+  
+
+ }
+
+

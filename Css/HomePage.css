@@ -13,65 +13,37 @@
   .links {
    
     font-size: small;
+    text-decoration: none;
+    margin-left: 2rem;
+    color: black;
+
   }
 
 .links:hover{
   color:blueviolet;
 
 }
-.logo  .search{
- height: 2rem;
- border-radius: 10px 1px 1px 10px;
- border: none; 
- background-color: rgb(237, 237, 218);
- padding-left: 1rem;
- margin-left: 2rem;
- 
-}
-.logo  button{
-  height: 2rem;
-  border-radius: 1px 10px 10px 1px;
-  padding:5px;
-  border: none;
-  background-color: blueviolet;
-  color: white;
 
 
-}
-nav{
-  display: flex;
-  align-items: center;
-  border: 1px solid gray;
-  padding: .5rem;
-}
-nav a{
-  text-decoration: none;
-  margin-left: 2rem;
-  color: black;
-}
-main{
-  height: 500px;
-}
-main .testimonial{
-  height: 500px;
-}
-main .offers{
+
+
+/* main .offers{
   display: grid;
   height: 500px;
   grid-template-columns: 1fr 1fr;
   margin: 1rem;
 
-}
+} */
 
-main .offers div{
+/* main .offers div{
   margin: 2rem;
-} 
-.about{
+}  */
+/* .about{
   height: 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 3rem;
-}
+} */
 
 
 .category{

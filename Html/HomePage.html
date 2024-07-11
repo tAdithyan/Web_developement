@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="/Css/HomePage.css" />
   </head>
   <body class="bg-gray-200">
-    <header class="flex justify-between items-center h-20">
-      <div class="logo text-4xl font-bold ms-8 items-center flex">
-        <a href="#" class="no-underline text-black">TechShed</a>
+    <header class="flex justify-between items-center h-20 flex-col md:flex-row">
+      <div
+        class="logo md:text-4xl font-bold md:ms-8 items-center flex gap-2 mt-2"
+      >
+        <a href="#" class="no-underline text-black ms-10">TechShed</a>
         <input
           type="text"
-          class="p-2 rounded-s-xl ms-11 text-sm bg-yellow-50"
+          class="p-2 rounded-s-xl md:ms-11 text-xs md:text-sm bg-yellow-50 h-8 border-none w-[8rem]"
           placeholder="Search here #"
         />
-        <button class="text-sm">Search</button>
+        <button
+          class="text-xs md:text-sm me-14 bg-violet-500 text-white h-8 px-2 rounded-e-full"
+        >
+          Search
+        </button>
       </div>
-      <div class="user flex justify-center items-center gap-9">
-        <a href="#"
-          ><i class="fa-solid fa-user"></i></a>
+      <div
+        class="user flex justify-center items-center gap-9 md:text-base text-sm"
+      >
+        <a href="#"><i class="fa-solid fa-user"></i></a>
         <a href="#">LogIn</a>
         <a href="#"><i class="fa-regular fa-heart"></i></a>
         <div class="flex me-5">
@@ -32,18 +39,27 @@
             1
           </p>
         </div>
+        <a href="#" class="md:hidden" onclick="showitems() " id="bars"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <a href="#" class="hidden" onclick="hideItems()" id="hideItems"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></a>
       </div>
     </header>
-    <nav>
+    <nav
+      class="md:flex-col flex-col items-center border border-stone-600 p-2 hidden"
+      id="navItems"
+    >
       <a href="" class="links">Shop all</a>
       <a href="" class="links">Computers</a>
       <a href="" class="links">Tablets</a>
       <a href="" class="links">Drons & cameras </a>
       <a href="" class="links"
         ><select id="Audio" name="Audio" class="bg-transparent w-15">
-          <option value="apple">Audio</option>
-          <option value="banana">HeadPhones</option>
-          <option value="cherry">Speakers</option>
+          <option value="Audio">Audio</option>
+          <option value="HeadPhones">HeadPhones</option>
+          <option value="Speakers">Speakers</option>
         </select></a
       >
 
@@ -53,9 +69,9 @@
       <a href="" class="links">sale</a>
     </nav>
     <main>
-      <section class="offersDetails">
-        <article class="test testimonial " >
-          <div class="relative">
+      <section class="offersDetails relative">
+        <article class="test testimonial overflow-hidden">
+          <div>
             <div class="mySlides hidden fade">
               <img src="/Accets/carosal1.webp" style="width: 100%" />
             </div>
@@ -69,44 +85,64 @@
             </div>
           </div>
           <br />
-<div class="absolute top-72 flex flex-col ms-32">
-  <span class="bg-red-600 text-white px-5 w-fit rounded-full m-2">Best Prices</span>
-  <div class="text-5xl flex flex-col font-semibold">
-     <span>Incredible Prices</span>
-  <span>on All Your</span>
-  <span>Favorite Items</span>
-  </div>
- 
-  <span class="font-thin text-xl">Get more for less on selected brands</span>
-
-   <button class="bg-violet-500 rounded-full text-white px-16 mt-4 py-2 w-fit font-light  " >Shop Now</button>
-</div>
-
-
-        </article>
-        <article class="offers">
-          <div class="relative">
-            <img src="/Accets/offer1.webp" alt="" />
-            <div class="absolute top-24">
-              <h4 class="text-xl text-white">Holyday Deals</h4>
-              <h1 class="font-bold text-4xl text-white">Up to 30% off</h1>
-              <h1 class="text-xl text-white">Selected Smartphone Brands</h1>
+          <div class="absolute top-1 left-4 md:top-10 flex flex-col md:ms-10">
+            <span
+              class="bg-red-600 text-white text-xs px-5 w-fit rounded-full m-1 md:m-2"
+              >Best Prices</span
+            >
+            <div
+              class="text-xs lg:text-5xl flex flex-row lg:flex-col font-semibold"
+            >
+              <span>Incredible Prices </span>
+              <span> on All Your</span>
+              <span>Favorite Items</span>
             </div>
+
+            <span class="font-thin text-xs md:text-xl"
+              >Get more for less on selected brands</span
+            >
+
             <button
-              class="border-none p-2 absolute px-6 top-60 left-20 bg-white rounded-full"
+              class="bg-violet-500 rounded-full text-xs text-white px-2 md:px-16 md:mt-4 md:py-2 w-fit font-light mb-2"
             >
               Shop Now
             </button>
           </div>
-          <div class="relative">
-            <img src="/Accets/offer2.webp" alt="" />
-            <div class="absolute top-24">
-              <h4 class="text-xl text-white">Holyday Deals</h4>
-              <h1 class="font-bold text-4xl text-white">Up to 30% off</h1>
-              <h1 class="text-xl text-white">Selected Smartphone Brands</h1>
+        </article>
+        <article
+          class="offers grid lg:grid-cols-2 lg:m-4 justify-center items-center gap-4 h-fit"
+        >
+          <div class="relative ">
+            <img src="/Accets/offer1.webp" alt="" />
+            <div class="absolute ms-5 lg:top-24 top-10">
+              <h4 class="text-xs lg:text-xl text-white">Holyday Deals</h4>
+              <h1 class="font-bold text-xs lg:text-4xl text-white">
+                Up to 30% off
+              </h1>
+              <h1 class="text-xs lg:text-xl text-white">
+                Selected Smartphone Brands
+              </h1>
             </div>
             <button
-              class="border-none p-2 absolute px-6 top-60 left-20 bg-white rounded-full"
+            class="border-none lg:p-2 font-thin lg:font-normal absolute md:px-6  ms-8  px-1 top-24 lg:top-60 bg-white rounded-full md:left-10 text-xs md:text-base"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div class="relative " >
+            <img src="/Accets/offer2.webp" alt="" />
+
+            <div class="absolute ms-5 lg:top-24 top-10">
+              <h4 class="text-xs lg:text-xl text-white">Holyday Deals</h4>
+              <h1 class="font-bold text-xs lg:text-4xl text-white">
+                Up to 30% off
+              </h1>
+              <h1 class="text-xs lg:text-xl text-white">
+                Selected Smartphone Brands
+              </h1>
+            </div>
+            <button
+              class="border-none lg:p-2 font-thin lg:font-normal absolute md:px-6  ms-8  px-1 top-24 lg:top-60 bg-white rounded-full md:left-10 text-xs md:text-base"
             >
               Shop Now
             </button>
@@ -114,9 +150,9 @@
         </article>
       </section>
 
-      <section class="about test">
+      <section class="about test flex flex-col lg:flex-row justify-around lg:bg-white gap-2 p-2 lg:p-8 lg:m-8 h-fit">
         <div
-          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+          class="test justify-center flex items-center gap-5 font-thin  text-sm lg:text-xl  bg-white"
         >
           <i class="fa-solid fa-motorcycle"></i>
           <div>
@@ -125,7 +161,7 @@
           </div>
         </div>
         <div
-          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        class="test justify-center flex items-center gap-5 font-thin  text-sm lg:text-xl bg-white"
         >
           <i class="fa-solid fa-box"></i>
           <div>
@@ -134,7 +170,7 @@
           </div>
         </div>
         <div
-          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        class="test justify-center flex items-center gap-5 font-thin  text-sm lg:text-xl bg-white"
         >
           <i class="fa-solid fa-motorcycle"></i>
           <div>
@@ -143,7 +179,7 @@
           </div>
         </div>
         <div
-          class="test justify-center flex items-center gap-5 font-thin text-xl bg-white"
+        class="test justify-center flex items-center gap-5 font-thin  text-sm lg:text-xl bg-white"
         >
           <i class="fa-solid fa-motorcycle"></i>
           <div>
@@ -152,12 +188,12 @@
           </div>
         </div>
       </section>
-      <div class="bg-white p-10 m-10">
-        <h1 class="text-2xl text-center font-bold">Best Sellers</h1>
+      <div class="bg-white p-10 lg:m-10">
+        <h1 class="lg:text-2xl text-center font-bold">Best Sellers</h1>
 
         <section class="bestSellers test">
           <div
-            class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4 flex-col"
+            class="flex items-center justify-center w-full h-full   pb-24 sm:py-8 px-4 flex-col"
           >
             <div class="w-full relative flex items-center justify-center">
               <button
@@ -412,7 +448,7 @@
               </button>
             </div>
             <button
-              class="bg-violet-600 text-white rounded-2xl mt-8 px-20 p-2 hover:bg-white border border-violet-600 hover:text-violet-600 transition duration-500 ease-in-out"
+              class="bg-violet-600 text-white rounded-2xl mt-8 lg:px-20 p-2 hover:bg-white border border-violet-600 hover:text-violet-600 transition duration-500 ease-in-out"
             >
               View All
             </button>
@@ -420,10 +456,10 @@
         </section>
       </div>
 
-      <section class="category bg-white">
+      <section class="category bg-white h-fit ">
         <h1 class="text-center text-3xl font-semibold">Shop by category</h1>
         <div
-          class="items test grid grid-cols-5 gap-10 mt-10 justify-center items-center px-8"
+          class="items test grid lg:grid-cols-5 gap-10 mt-10 justify-center items-center px-8 h-"
         >
           <div class="test rounded-full w-60 h-60 hover:scale-105">
             <img src="/Accets/laptop.jpeg" alt="" class="rounded-full" />
@@ -821,9 +857,7 @@
           <img src="/Accets/brand-mastercard@3x.webp" alt="mastercard" />
         </div>
       </section>
-    <div class="bg-gray-500">
-
-    </div>
+      <div class="bg-gray-500"></div>
 
       <footer class="test">
         <h5>© 2035 by TechShed. Powered and secured by Wix</h5>
