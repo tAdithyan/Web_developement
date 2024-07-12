@@ -45,7 +45,7 @@
   margin: 3rem;
 } */
 
-
+/* 
 .category{
   height: 100vh;
   margin: 3rem;
@@ -53,28 +53,13 @@
 align-items: center;
 display: flex;
 flex-direction: column;
-}
-.items{
-  height: 700px;
-  width: 100%;
- 
-}
-.brands{
-  height: 400px;
-  padding: 2rem;
- 
-}
-.brand{
-  height: 200px;
-  margin: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+} */
 
-}
-.newsletter{
+
+/* .newsletter{
   margin: 3rem;
   height: 200px;
-}
+} */
 
 .overview{
   display: grid;
