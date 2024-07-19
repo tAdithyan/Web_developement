@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Css/HomePage.css" />
+
+    <title>Login</title>
+  </head>
+  <body class="grid grid-cols-2 bg-red">
+    <div
+      class="border h-screen justify-center items-center flex"
+      style="
+        background-image: url(/Accets/login/cart.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    ></div>
+    <div class="bg-violet-100 justify-center items-center flex flex-col gap-5">
+      <div class="border-white border-2 p-28 flex justify-center items-center flex-col gap-5">
+        <h1 class="text-3xl font-bold text-violet-900">Register</h1>
+        <form action="" class="flex flex-col gap-4 justify-center items-center" id="RegisterForm">
+          <input
+            type="email"
+            placeholder=" Email"
+            class="w-96 px-2 py-2 rounded-lg"
+            id="registerEmail"
+            required
+          />
+          <input
+            type="password"
+            placeholder=" password"
+            class="w-96 px-2 py-2 rounded-lg"
+            id="registerPassword"
+            required
+            min="8"
+          />
+          <input
+            type="password"
+            placeholder="retype_password"
+            class="w-96 px-2 py-2 rounded-lg"
+            id="retype_password"
+            required
+          />
+          <p id="errorTxt"></p>
+          <div class="text-xs">
+            if you have an account...?<a href="./Login.html" class="underline">LOGIN</a>
+          </div>
+
+          <button
+            class="border border-none bg-violet-500 w-36 rounded-full p-2 text-white hover:bg-violet-800"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="/js/Auth.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
